@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zabawa :)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <div>
+        <div class="suwaki">
+            <br><label>Wysokość<input type="range" id='inpwys' min="100" max="1000" step="1" value="300" oninput="wysok(); dane();"><a id='wys'>300</a></label></br>
+            <br><label>Szerokość<input type="range" id='inpsze' min="100" max="1000" step="1" value="300" oninput="szer();  dane();"><a id='sze'>300</a></label></br>
+        </div>
+        <div class="place">
+            <input type="color" value='#162e30' id="c" onchange="kolor();"><br>
+            <textarea id="arena" cols="30" rows="10" oninput="liczenie();"></textarea>
+        </div>
+        <div class="stats">
+            <label><input type="radio" value=1 id="stat1" name="stat" oninput="sts1();">Pokaż statystyki</label>
+            <label><input type="radio" value=0 name="stat" id="stat2" oninput="sts2();">Schowaj statystyki</label>
+            <div id='statystyki'></div>
+        </div>
+    </div>
+</body>
+</html>
