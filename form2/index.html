@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormularzV3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="wiek.js"></script>
+</head>
+<body>
+    <div>
+        <div class="form">
+            <div>
+                <h1>Formularz rejestracji na szkolenie</h1>
+            </div>
+            <div>
+                <form id="formularz">
+                    <label>Imie i Nazwisko: <input type="text" id="imie" minlength="3" placeholder="imie" pattern="^[A-Z]{1}[a-z]+$" required> <input tpye="text" id="nazwisko" minlength="3" pattern="^[A-Z]{1}[a-z]+$" placeholder="nazwisko" required></label><p>
+                    <label>Wiek: <input type="range" min="10" max="150" id="wiek" step=1><z id="wiek1"></z></label><p>
+                    <label>Stanowisko: 
+                        <select name="stanowisko" id="stan">
+                            <option>Administrator sklepów internetowych</option>
+                            <option>Analityk Systemowy</option>
+                            <option>Informatyk</option>
+                            <option>Kierownik Projektu</option>
+                            <option>Koordynator Projektu</option>
+                            <option>Pozycjoner Stron internetowych</option>
+                            <option>SEO Copywriter</option>
+                            <option>Specjalista ds. E-commerce</option>
+                        </select>
+                    </label></p>
+                    <label>Nazwa firmy: <input type="text" id="nazwa_fr" minlength="2" placeholder="np. Tesla" required></label>
+                    <label>NIP: <input type="text" id="nip" placeholder="np. PL123-456-78-90" pattern="^PL[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}$" required></label><p>
+                    <label>E-mail: <input type="email" id="email" placeholder="np. nazwa@gmail.com" required></label><p>
+                    <label>Ulica: <input type="text" id="ulica" minlength="3" pattern="^[A-Z]{1}[a-z]+$" placeholder="np. Fordońska" required></label><p>
+                    <label>Nr: <input type="number" id="nr" min=0 placeholder="np. 1/12" required></label>
+                    <label>Kod pocztowy: <input type="text" id="kod" placeholder="np. 85-314" pattern="^[0-9]{2}-[0-9]{3}$" required></label></p>
+                    <label>Miejscowość: <input type="text" id="miejscowosc" placeholder="np. Bydgoszcz" required></label></p>
+                    <label>Typ działalności:
+                        <select name="dzialalnosc" id="typ">
+                            <option>działalność gosp.</option>
+                            <option>s.c.</option>
+                            <option>sp. z o.o.</option>
+                            <option>sp. jawna</option>
+                            <option>sp. komandytowa</option>
+                            <option>inny</option>
+                        </select>
+                    </label></p>
+                    <label>Roczny obrót:<p>
+                        <label><input type="radio"  name="kwota" value="1"> od 0 do 150tys.</label><p>
+                        <label><input type="radio"  name="kwota" value="2"> od 150 do 450tys.</label><p>
+                        <label><input type="radio"  name="kwota" value="3"> od 450 do 800tys.</label><p>
+                        <label><input type="radio"  name="kwota" value="4"> od 800tys. i więcej</label><p>
+                    </label>
+                    <label>Data: <z id="data"></z></label><p><script src="data.js"></script>
+                    <label><input type="submit" value="Wygeneruj list" id="wys"></label>
+                   
+                </form>
+            </div>
+
+        </div>
+        <div class="list">
+            <h2>List</h2>
+            <div id="maciej">
+            </div>
+            <div id="uczestnik">
+            </div>
+            <div id="tresc">
+            </div>
+            <div id="blup">
+            </div>
+
+        </div>
+ <script src="main.js"></script>
+        </div>
+    </div>
+    
+</body>
+</html>

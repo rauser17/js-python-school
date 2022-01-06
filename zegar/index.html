@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zegar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="zegar" id="zegar">
+        <div class="n numer1">
+            <div id="numer1">1</div>
+        </div>  
+        <div class="n numer2">
+            <div id="numer2">2</div>
+        </div> 
+        <div class="n numer3">
+            <div id="numer3">3</div>
+        </div> 
+        <div class="n numer4">
+            <div id="numer4">4</div>
+        </div> 
+        <div class="n numer5">
+            <div id="numer5">5</div>
+        </div>         
+        <div class="n numer6">
+            <div id="numer6">6</div>
+        </div> 
+        <div class="n numer7">
+            <div id="numer7">7</div>
+        </div> 
+        <div class="n numer8">
+            <div id="numer8">8</div>
+        </div> 
+        <div class="n numer9">
+            <div id="numer9">9</div>
+        </div> 
+        <div class="n numer10">
+            <div id="numer10">10</div>
+        </div> 
+        <div class="n numer11">
+            <div id="numer11">11</div>
+        </div> 
+        <div class="n numer12">
+            <div id="numer12">12</div>
+        </div>
+        <div class="strzalka" id="sec">
+            <div class="sec"></div>
+        </div> 
+        <div class="strzalka" id="min">
+            <div class="min"></div>
+        </div> 
+        <div class="strzalka" id="godz">
+            <div class="godz"></div>
+        </div> 
+    </div>
+    <script src="obrot.js"></script>
+    <div class="ustawienia" id="ustawienia">
+        <div class="napis" id="napis">
+        <a>Settings:</a>
+        </div>
+        <div class="opcje">
+            <ul>
+                <li>Colors:</li>
+                <input type="button" class="button" value="&#10132; " onclick="set1(this);"><z>Set I</z></br>
+                <input type="button" class="button" value="&#10132;"  onclick="set2(this);"><z>Set II</z></br>
+                <input type="button" class="button" value="&#10132;"  onclick="set3(this);"><z>Set III</z></br>
+                <li>Font:</li>
+                <input type="button" class="button" value="&#10132;"  onclick="font1(this);"><z>Arial</z></br>
+                <input type="button" class="button" value="&#10132;"  onclick="font2(this);"><z>Courier</z></br>
+                <input type="button" class="button" value="&#10132;"  onclick="font3(this);"><z>Font 3</z></br>
+                <li>Picture on the clock face:</li>
+                <input type="button" class="button" value="&#10132;" onclick="noP(this);"><z>No picture</z></br>
+                <input type="button" class="button" value="&#10132;" onclick="P1(this);"><z>Picture 1</z></br>
+                <input type="button" class="button" value="&#10132;" onclick="P2(this);"><z>Wielcy Polacy</z></br>
+                <input type="button" class="button" value="&#10132;" onclick="P3(this);"><z>Dogecoin</z></br>
+                <li>Numbers:</li>
+                <input type="button" class="button" value="&#10132;" onclick="arabic(this);"><z>Arabic</z></br>
+                <input type="button" class="button" value="&#10132;" onclick="roman(this);"><z>Roman</z></br>    
+            </ul>
+        </div>
+        <div class="napis" id="napis">
+            <a>Electronic clock:</a>
+            </div>
+        <div class="el_zegar" id="el_zegar">
+            <z class="el_godz" id="el_godz">00</z>:<z class="el_min" id="el_min">00</z>:<z class="el_sec" id="el_sec">00</z>
+            <script src="el_zegar.js"></script>
+        </div>
+        <div class=notka id="notka">
+            <a>by Bartosz Dworaźny</a>
+        </div>
+    </div>
+    <script src="zmiana.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(153, 238, 210);
+}
+
+.main{
+    width: auto;
+    height: auto;
+
+}
+.form{
+    color: black;
+    height: auto;
+    width: auto;
+    background-color: rgb(77, 233, 137);
+    border: 10px solid rgb(77, 233, 137);
+    box-shadow: 10px 10px  grey;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.zamowienie{
+    width: auto;
+    height: auto;
+}
+
+#kolor{
+    float: right;
+}
+
+#zam{
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+#w1{
+    width: 100px;
+}
