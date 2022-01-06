@@ -228,4 +228,4 @@ ekspres.on()
 print(ekspres.stan())
 
 #opcje nie uruchamiają się gdy urządzenie
-#eksperes przypomina co jakiś czas urzytkownikowi, że czas go troche wyczyścić
+#eksperes przypomina co jakiś czas uzytkownikowi, że czas go troche wyczyścić
